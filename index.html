@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uma sequência configurável que marca números ímpares como Snap, múltiplos de cinco como Crackle e combina os dois sinais.">
+    <title>
+      Ritmo Snap e Crackle
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Ritmo
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Ritmo Snap e Crackle
+        </h1>
+        <p class="introducao">
+          Uma sequência configurável que marca números ímpares como Snap, múltiplos de cinco como Crackle e combina os dois sinais.
+        </p>
+      </section>
+      <section class="painel">
+        <form id="formulario" class="grade">
+          <div class="campo">
+            <label for="limite">
+              Último número
+            </label>
+            <input id="limite" type="number" min="1" max="150" value="30">
+          </div>
+          <div class="acoes">
+            <button>
+              Gerar sequência
+            </button>
+          </div>
+        </form>
+        <div id="resultado" class="resultado" aria-live="polite">
+        </div>
+      </section>
+      <p class="etiqueta">
+        REGRA: ÍMPAR = SNAP · MÚLTIPLO DE 5 = CRACKLE
+      </p>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
